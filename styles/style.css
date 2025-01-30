@@ -1,6 +1,9 @@
-  body {
+  *{
       box-sizing: border-box;
-      margin: 0 auto;
+  }
+  body {
+      margin: 0;
+
   }
 
   form {
@@ -62,8 +65,98 @@
   }
 
   .container {
-      width: 400px;
-      border: 2px solid black;
+      max-width: 400px;
+      border: 2px solid gray;
       padding: 10px;
       margin: 40px auto;
+      box-shadow:0 0 15px gray; 
   }
+  
+  /* index page */
+.header {
+    font-size: 0;
+}
+  .head_container{
+    max-width:1200px;
+    margin: 10px auto;
+    padding: 0 15px;
+    
+  }
+  .visual{
+    max-width: 1200px;
+    min-height: 450px;
+    padding:0 15px;
+    margin: 4px auto;
+    background-color: #F5F5F580;
+  }
+ .logo, 
+ .header_nav,
+ .navigation_button{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    
+  }
+  ul{
+    list-style-type: none;
+  }
+  .header_nav ul{
+    padding: 0;
+    margin: 0;
+  }
+  .logo{
+    width: 150px;
+  }
+  .navigation_button{
+    width: 150px;
+    height: 35px;
+    border: 2px solid #46A358;
+    background-color: #46A358;
+    border-radius: 6px;
+    text-align: center;
+    color: #fff; 
+    padding-top: 6px;
+  }
+  .navigation_button:hover{
+    background-color: #d3d2f4;
+    color: #46A358;
+  }
+  .navigation_button a:visited{
+    color: #fff;
+  }
+  .header_nav{
+    width: calc(100% - 300px);
+    text-align: center;
+  }
+  .header_nav-list li{
+    display: inline-block;
+    margin: 0 25px 0; 
+  }
+  .navigation_button,.header_nav-list a{
+    text-decoration: none;
+  }
+  .login_img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+    padding-bottom: 4px;       
+  }
+   
+  .header_nav-list a{
+    color: #3D3D3D;
+    padding-bottom: 30px;
+    
+  }
+  .active a{
+    font-weight: bold;
+  }
+  .active a, 
+  .header_nav-list a:hover{
+    border-bottom: solid 3px #46A358;
+  }
+  .text{
+    width: 693px;
+  }
+  
