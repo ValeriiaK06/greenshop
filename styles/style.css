@@ -188,13 +188,13 @@
     
     width: 100%;
     font-size: 13px;
-    font-weight: bold;
     color: #727272;
   }
   .main_caption{
    
     width: 100%;
     font-size: 60px;
+    font-weight: bold;
   }
    .text,.image_plant{
     vertical-align: middle;
