@@ -116,8 +116,7 @@
     border-radius: 6px;
     text-align: center;
     color: #fff; 
-    /* padding-top: 6px; */
-    padding: 6px 4px 4px;
+    padding: 3px;
   }
   .navigation_button:hover{
     background-color: #d3d2f4;
@@ -127,7 +126,7 @@
     color: #fff;
   }
   .header_nav{
-    width: calc(100% - 300px);
+    width: calc(100% - 250px);
     text-align: center;
   }
   .header_nav-list li{
@@ -138,12 +137,9 @@
     text-decoration: none;
   }
   .login_img{
-    display: inline-block;
     width: 20px;
     height: 20px;
-    vertical-align: middle; 
-    margin-right: 10px;
-    padding-bottom: 4px;       
+   
   }
    
   .header_nav-list a{
@@ -210,4 +206,11 @@
   }
   .planet{
     color: #46A358;
+  }
+  .btn{
+    margin: 4px;
+  }
+  .login_img,.btn{
+    display: inline-block;
+    vertical-align: middle;
   }
