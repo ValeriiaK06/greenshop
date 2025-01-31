@@ -88,6 +88,7 @@
     padding:0 15px;
     margin: 4px auto;
     background-color: #F5F5F580;
+   
   }
  .logo, 
  .header_nav,
@@ -108,14 +109,15 @@
     width: 150px;
   }
   .navigation_button{
-    width: 150px;
+    width: 100px;
     height: 35px;
     border: 2px solid #46A358;
     background-color: #46A358;
     border-radius: 6px;
     text-align: center;
     color: #fff; 
-    padding-top: 6px;
+    /* padding-top: 6px; */
+    padding: 6px 4px 4px;
   }
   .navigation_button:hover{
     background-color: #d3d2f4;
@@ -139,7 +141,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    vertical-align: middle;
+    vertical-align: middle; 
     margin-right: 10px;
     padding-bottom: 4px;       
   }
@@ -156,7 +158,56 @@
   .header_nav-list a:hover{
     border-bottom: solid 3px #46A358;
   }
-  .text{
-    width: 693px;
+  .text,
+  .paragraph_1,
+  .paragraph_2,
+  .main_caption,
+  .image_plant{
+    display: inline-block;
   }
+    .paragraph_1,
+    .paragraph_2,
+    .main_caption {
+      margin: 0;
+    }
+  .text{
+    width: 650px;
+    font-size: 0;
+    
+  }
+  .image_plant{
+    width: 510px;
+  }
+  .paragraph_1{
   
+    width: 100%;
+    font-size: 15px;
+ 
+  }
+  .paragraph_2{
+    
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    color: #727272;
+  }
+  .main_caption{
+   
+    width: 100%;
+    font-size: 60px;
+  }
+   .text,.image_plant{
+    vertical-align: middle;
+  } 
+ 
+  .plant{
+   
+    width: 507px;
+    height: 450px;
+  }
+  .shop_button{
+    margin-top: 30px;
+  }
+  .planet{
+    color: #46A358;
+  }
