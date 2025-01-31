@@ -63,6 +63,15 @@
   .alternative {
       color: darkgray;
   }
+    .alternative::before,
+    .alternative::after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 97px;
+      height: 1px;
+      background: darkgrey;
+    }
 
   .container {
       max-width: 400px;
@@ -177,19 +186,19 @@
   .paragraph_1{
   
     width: 100%;
-    font-size: 15px;
+    font-size: 14px;
  
   }
   .paragraph_2{
     
     width: 100%;
-    font-size: 13px;
+    font-size: 14px;
     color: #727272;
   }
   .main_caption{
    
     width: 100%;
-    font-size: 60px;
+    font-size: 70px;
     font-weight: bold;
   }
    .text,.image_plant{
