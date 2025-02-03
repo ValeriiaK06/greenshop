@@ -204,7 +204,7 @@
    
     width: 100%;
     font-size: 70px;
-    font-weight:900px;;
+    font-weight:900;
   }
    .text,.image_plant{
     vertical-align: middle;
@@ -253,7 +253,7 @@
   }
   .side-menu{
     margin: 15px;
-    size: 15px;
+    font-size: 15px;
     
   }
   .side-menu a{
@@ -277,8 +277,8 @@
   }
   .caption_for_list{
     margin: 20px 30px;
-    size: 18px;
-    font-weight: 700px;
+    font-size: 18px;
+    font-weight: 700;
   }
 
   .content{
