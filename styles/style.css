@@ -291,7 +291,7 @@
     float: right;
     width: calc(100% - 310px);
     min-height: 1190px;
-    padding: 15px;
+    padding: 0 15px;
   }
   .content-menu{
     display: inline-block;
@@ -406,3 +406,9 @@
         .current_page a{
           color: white;
          }
+
+         .flex-container{
+          display: flex;
+          align-items: stretch;
+         }
+         
