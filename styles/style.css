@@ -100,6 +100,7 @@
 .header {
     font-size: 0;
 }
+
 .main_container{
    max-width:1200px;
     margin: 10px auto;
@@ -109,7 +110,7 @@
   .visual{
   
     padding:0 17px; 
-    margin: 4px auto; 
+    margin: 10px auto; 
     background-color: #F5F5F580;
    
   }
@@ -198,19 +199,22 @@
   
     width: 100%;
     font-size: 14px;
+    line-height: 16px;
  
   }
   .paragraph_2{
     
     width: 100%;
     font-size: 14px;
-    color: #727272;
+    color:#727272;
+    line-height: 24px;
   }
   .main_caption{
    
     width: 100%;
     font-size: 70px;
     font-weight:900;
+    line-height: 70px;
   }
    .text,.image_plant{
     vertical-align: middle;
@@ -254,7 +258,7 @@
     width: 310px;
     min-height: 774px;
     float: left;
-    margin-top: 30px;
+    margin-top: 25px;
     background-color: #FBFBFB;
   }
   .side-menu{
@@ -337,11 +341,13 @@
     }
      .card_plant_1{
       padding: 10px 5px; 
-      margin: 20px 35px;
-      width: 258px;
-      min-height:300px ;
+      margin: 20px 10px;
+      width: 260px;
       background-color: #FBFBFB;
      
+     }
+     .cards{
+      margin-left: 40px;
      }
      [alt="plant_1"] {
            width: 250px;
