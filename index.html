@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <div class="main_container">
     <header class="header">
         <div class="head_container">
       <strong class="logo"><img src="images/greenshop_logo.svg" alt="greenshop_logo" title="logo"></strong>
@@ -60,7 +61,15 @@
             <li><a href="#">New Arrivals</a></li>
             <li><a href="#">Sale</a></li>
         </ul>
-        <span class="sort">Sort by: Default sorting <img src="images/Arrow - Down 2.svg" alt="arrow_down"></span>
+        <!-- <span class="sort">Sort by: Default sorting <img src="images/Arrow - Down 2.svg" alt="arrow_down"></span> -->
+         <div class="sort">
+         <label for="options">Sort by:</label>
+         <select id="options" name="options">
+          <option value="">Default sorting</option>
+          <option value="">By Ascending</option>
+          <option value="">By Descending</option>
+         </select>
+        </div>
         <div class="card_plant_1"><img src="images/card_plant_1.svg" alt="plant_1">
             <p class="name">Barberton Daisy</p>
             <p class="price">$119.00</p>
@@ -76,6 +85,7 @@
             <li><a href="#">4</a></li>
             <li><a href="#"><img src="images/Arrow - Right 2.svg" alt="arrow_right"></a></li>
         </ul>
+    </div>
     </div>
     <footer></footer>
     
