@@ -143,8 +143,8 @@
     padding: 3px;
   }
   .navigation_button:hover{
-    background-color: #d3d2f4;
-    color: #46A358;
+    background-color: #30633a;
+    transform: scale(1.1);
   }
   .navigation_button a:visited{
     color: #fff;
