@@ -8,6 +8,13 @@
       font-weight: normal;
       font-style: normal;
     }
+     @font-face {
+          font-family: 'Cera Pro';
+          src: url('../fonts/CeraPro-Bold.woff2') format('woff2');
+          font-weight: 700;
+          font-style: normal;
+        }
+        
   body {
       margin: 0;
       font-family: 'Cera Pro', sans-serif;
@@ -304,14 +311,22 @@
     .content-menu a:hover{
       border-bottom: solid 3px #46A358;
     }
+   
     .current a{
       color: #46A358;
+      border-bottom: solid 3px #46A358;
     }
+     .side-menu .current_option a {
+          color: #46A358;
+          font-weight: 700;
+        }
+        
     .sort{
       color: #3D3D3D;
       float: right;
       margin: 16px;
     }
+    
     .pages,
     .sort::after{
       content: '';
@@ -337,6 +352,7 @@
       font-weight: 700;
       font-size: 18px;
       line-height: 16px;
+      margin: 5px;
     }  
     
     .name{
@@ -344,6 +360,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 16px;
+      margin: 5px;
 
     }  
     .pages-menu li{
