@@ -334,6 +334,11 @@
     margin-top: 25px;
     background-color: #FBFBFB;
   }
+  .side-bar + .content{
+    width:calc(100%-350px);
+    float: right;
+    padding-left: 50px; 
+  }
   .side-menu{
     margin: 15px;
     font-size: 15px;
@@ -366,7 +371,6 @@
 
   .content{
     float: right;
-    width: calc(100% - 310px);
     padding: 0 10px;
   }
   .content-menu{
@@ -417,9 +421,7 @@
       flex-grow: 1;
      
      }
-     .cards{
-      margin-left: 40px;
-     }
+    
      [alt="plant_1"] {
            width: 100%;
           background-color: #FBFBFB;
