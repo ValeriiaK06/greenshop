@@ -498,7 +498,7 @@
           column-gap: 35px;
          }
        .hidden{
-        height: 200px;
+        height: 300px;
         visibility: hidden;
        }
          .offers{
@@ -507,7 +507,7 @@
           justify-content: center;
          column-gap: 30px;
          }
-         .offer_2,
+         
          .offer_1{
           display: flex;
           width: 50%;
@@ -515,11 +515,13 @@
           padding: 15px;
           align-items: center;
           justify-content: space-between;
+        
 
          }
          .african_violet,
         .blushing_bromeliad{
           width: 100%;
+          margin-top: -100px;
         }
         .info{
           display: flex;
@@ -542,6 +544,7 @@
           font-weight: 400;
           color: #727272;
           margin: 0;
+          margin-left: -46px;
         }
         .blogs_button{
             display: flex;
@@ -551,3 +554,4 @@
             align-self: flex-end;
             
         }
+        
