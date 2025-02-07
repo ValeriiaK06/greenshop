@@ -544,6 +544,7 @@
           text-transform: uppercase;
           color: #3D3D3D;
           margin:0;
+          
         }
         .description{
           font-size: 14px;
@@ -571,6 +572,7 @@
           font-weight: 700;
           color: #3D3D3D;
           margin-bottom: 5px;
+         
 
         }
         .info_posts {
