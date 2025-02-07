@@ -1,6 +1,7 @@
   *{
       box-sizing: border-box;
   }
+  
 
     @font-face {
       font-family: 'Cera Pro';
@@ -179,7 +180,9 @@
     margin: 10px auto;
     padding: 0 15px;
 }
-  
+  .head_container{
+    padding-bottom: 2px;
+  }
   .visual{
   
     padding:0 17px; 
@@ -406,7 +409,7 @@
       margin: 16px;
     }
     
-    .pages,
+   
     .sort::after{
       content: '';
       clear: both;
@@ -460,9 +463,15 @@
       font-weight: 300;
     }
     .pages{
-      float: right;
-      padding: 20px;
-      margin: 40px;
+       display: flex;
+       align-items: center;
+       justify-content: flex-end;
+       margin-top: 30px;
+       margin-bottom: 150px;
+      
+    }
+    .pages-menu li{
+      flex-grow: 1;
     }
          [alt="arrow_rigt"]{
           display: inline-block;
@@ -497,15 +506,13 @@
           row-gap: 37px;
           column-gap: 35px;
          }
-       .hidden{
-        height: 300px;
-        visibility: hidden;
-       }
+      
          .offers{
           display: flex;
           flex-wrap: nowrap;
           justify-content: center;
          column-gap: 30px;
+         margin-bottom: 138px;
          }
          
          .offer_1{
@@ -551,7 +558,89 @@
             justify-content: center;
             flex-direction: row;
             width: 140px;
-            align-self: flex-end;
-            
+            align-self: flex-end;   
         }
-        
+
+        .blog_caption{
+          text-align: center;
+        }
+       
+        .caption_posts{
+          font-size: 30px;
+          line-height: 30px;
+          font-weight: 700;
+          color: #3D3D3D;
+          margin-bottom: 5px;
+
+        }
+        .info_posts {
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: 400;
+          color: #727272;
+          margin:0 0 35px;
+        }
+        [src="plant_blog"]{
+          width: 100%;
+        }
+
+        .blog_container{
+          display: flex;
+          flex-wrap: nowrap;
+          column-gap: 44px;
+          padding-bottom: 20px;
+
+        }
+        .post{
+          display: flex;
+          width: 25%;
+          background-color: #FBFBFB;
+          flex-direction: column;
+          flex-grow: 1;
+          
+        }
+        .extra{
+          display: flex;
+          flex-direction: column;
+          padding: 15px;
+          align-items: flex-start;
+          row-gap: 5px;
+        }
+        .date,
+        .caption_to_post,
+        .description_post{
+          margin: 0;
+          text-align: left;
+        }
+       .caption_to_post{
+        font-size: 20px;
+        font-weight: 700;
+        color: #3D3D3D;
+
+        }
+        .date{
+          font-size: 14px;
+          font-weight: 500;
+          color: #46A358;
+        }
+        .description_post{
+          font-size: 14px;
+          font-weight: 400;
+          color: #727272;
+        }
+        .more_info {
+          text-decoration: none;
+          color: #3D3D3D;
+          font-size: 14px;
+          font-weight: 500;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 3px;
+        }
+        .more_info:visited{
+          color: #3D3D3D;
+        }
+        .more_info:hover{
+          color: #46A358;
+        }
