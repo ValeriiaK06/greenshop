@@ -181,10 +181,11 @@
     padding: 0 15px;
 }
   .head_container{
-    padding-bottom: 2px;
+    padding: 2px 0;
+    position: relative;
   }
   .visual{
-  
+
     padding:0 17px; 
     margin: 10px auto; 
     background-color: #F5F5F580;
@@ -209,7 +210,7 @@
     width: 150px;
   }
   .navigation_button{
-    width: 100px;
+    min-width: 100px;
     height: 35px;
     border: 2px solid #46A358;
     background-color: #46A358;
@@ -251,10 +252,20 @@
   .active a{
     font-weight: bold;
   }
-  .active a, 
+
+  .header_nav-list li a::after{
+    content: "";
+    height: 3px;
+    width: 45px;
+    background: #46A358;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+  }
+  /* .active a, 
   .header_nav-list a:hover{
     border-bottom: solid 3px #46A358;
-  }
+  } */
   .text,
   .image_plant{
     display: inline-block;
@@ -509,7 +520,6 @@
       
          .offers{
           display: flex;
-          flex-wrap: nowrap;
           justify-content: center;
          column-gap: 30px;
          margin-bottom: 138px;
@@ -521,7 +531,7 @@
           background-color: #FBFBFB;
           padding: 15px;
           align-items: center;
-          justify-content: space-between;
+          
         
 
          }
@@ -558,7 +568,7 @@
             display: flex;
             justify-content: center;
             flex-direction: row;
-            width: 140px;
+            min-width: 140px;
             align-self: flex-end;   
         }
 
@@ -591,6 +601,8 @@
           flex-wrap: nowrap;
           column-gap: 44px;
           padding-bottom: 20px;
+          font-size: 14px;
+
 
         }
         .post{
@@ -621,19 +633,18 @@
 
         }
         .date{
-          font-size: 14px;
+          
           font-weight: 500;
           color: #46A358;
         }
         .description_post{
-          font-size: 14px;
+        
           font-weight: 400;
           color: #727272;
         }
         .more_info {
           text-decoration: none;
           color: #3D3D3D;
-          font-size: 14px;
           font-weight: 500;
           display: flex;
           flex-direction: row;
