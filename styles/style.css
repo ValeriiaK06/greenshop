@@ -396,8 +396,8 @@
     margin-top: 25px;
     background-color: #FBFBFB;
   }
-  .side-bar + .content{
-    width:calc(100%-350px);
+  .content{
+    width: calc(100% - 350px);
     float: right;
     padding-left: 50px; 
   }
@@ -431,10 +431,7 @@
     font-weight: 700;
   }
 
-  .content{
-    float: right;
-    padding: 0 10px;
-  }
+  
   .content-menu{
     display: inline-block;
 
@@ -608,7 +605,6 @@
         .description{
           font-size: 14px;
           line-height: 24px;
-          font-weight: 400;
           color: #727272;
           margin: 0;
           margin-left: -46px;
@@ -637,7 +633,6 @@
         .info_posts {
           font-size: 14px;
           line-height: 24px;
-          font-weight: 400;
           color: #727272;
           margin:0 0 35px;
         }
@@ -763,8 +758,8 @@
       width: 188px;
       font-size: 16px;
       line-height: 20px;
-      font-weight: 400;
       left: 50%;
+      top: 30px;
       transform: translateX(-50%);
       display: none;
      }
@@ -780,17 +775,26 @@
       position: relative;
      }
          
-     .header_nav-list a.sub{
+     .header_nav-list a.sub,
+     .header_nav-list a.sub_2{
       padding: 10px 15px;
       display: block;
       color: #3D3D3D;
       text-align: left;
      }
-    .header_nav-list a.sub:hover{
-      background:#1A712A;
-      color: #fff;
-      font-weight: bold;
-    }
+   
+      .header_sub-menu a.sub:hover  {
+        background: #1A712A;
+        color: #fff;
+        font-weight: bold;
+       }
+
+      .next_head_menu:hover a.sub,
+      .extra_sub-menu .sub_2:hover {
+        background: #1A712A;
+       color: #fff;
+       font-weight: bold;
+             }
     .next_sub_menu::after{
       content: "";
       width: 8px;
@@ -799,17 +803,27 @@
       border-width: 2px 2px 0 0;
       transform:rotate(45deg);
       display: inline-block;
-      margin-left: 90px;  
+      margin-left: 80px;  
     }
-    .next_sub_menu:hover::after{
-      transform: rotate(225deg);
-    }
+   
+   .next_head_menu:hover .next_sub_menu::after {
+     transform: rotate(225deg);
+     }
+    
+   .next_head_menu:hover .extra_sub-menu,
+    .extra_sub-menu:hover+.next_sub_menu::after {
+    transform: rotate(225deg);
+         
+       }
+       .extra_sub-menu {
+        transform: none !important;
+                 
+      }
     .extra_sub-menu{
       position: absolute;
       width: 178px;
       font-size: 16px;
       line-height: 20px;
-      font-weight: 400;
       padding: 30px 0 0;
       top: 0;
       left: 100%;
