@@ -213,7 +213,7 @@
   ul{
     list-style-type: none;
   }
-  .header_nav ul{
+  .header_nav>ul{
     padding: 0;
     margin: 0;
   }
@@ -265,7 +265,7 @@
    
   }
    
-  .header_nav-list a{
+  .header_nav-list a.main_menu{
     color: #3D3D3D;
     padding-bottom: 30px;
     
@@ -286,7 +286,7 @@
             transition: transform 0.3s ease-in-out
      }
 
-     .header_nav-list a::after {
+     .header_nav-list a.main_menu::after {
        content: "";
        height: 3px;
        width: 100%;
@@ -301,9 +301,14 @@
      .product_icons:hover::before{
       transform: translateX(-50%) scaleX(1);
      }
-     .header_nav-list a:hover::after {
+     .header_nav-list a.main_menu:hover::after {
        transform: scaleX(1);
      }
+     .header_nav-list a.main_menu:hover,
+     .header_nav-list a.active{
+      font-weight: bold;
+     }
+    
   
      .header_nav-list a.active::after {
        transform: scaleX(1);
@@ -750,5 +755,68 @@
         .icons li{
          padding: 0;
         }
-      
-        
+     .header_sub-menu{
+      list-style-type: none;
+      padding:30px 0 0; 
+      position: absolute;
+      background:transparent;
+      width: 188px;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+      left: 50%;
+      transform: translateX(-50%);
+      display: none;
+     }
+     .extra_menu:hover .header_sub-menu{
+      display: block;
+     }
+      .header_sub-menu li{
+      background: #EDF6EE;
+       margin: 0;
+     }
+          
+     .extra_menu{
+      position: relative;
+     }
+         
+     .header_nav-list a.sub{
+      padding: 10px 15px;
+      display: block;
+      color: #3D3D3D;
+      text-align: left;
+     }
+    .header_nav-list a.sub:hover{
+      background:#1A712A;
+      color: #fff;
+      font-weight: bold;
+    }
+    .next_sub_menu::after{
+      content: "";
+      width: 8px;
+      height: 8px;
+      border: solid #3D3D3D;
+      border-width: 2px 2px 0 0;
+      transform:rotate(45deg);
+      display: inline-block;
+      margin-left: 90px;  
+    }
+    .next_sub_menu:hover::after{
+      transform: rotate(225deg);
+    }
+    .extra_sub-menu{
+      position: absolute;
+      width: 178px;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+      padding: 30px 0 0;
+      top: 0;
+      left: 100%;
+      display: none;
+     
+    }
+       
+    .next_head_menu:hover .extra_sub-menu{
+      display: block;
+    }
