@@ -301,9 +301,16 @@
      .product_icons:hover::before{
       transform: translateX(-50%) scaleX(1);
      }
+     
      .header_nav-list a.main_menu:hover::after {
        transform: scaleX(1);
      }
+            .header_nav-list a.main_menu:hover::after,
+             .extra_menu:hover>a.main_menu::after,
+             .extra_menu:has(.header_sub-menu:hover)>a.main_menu::after {
+                      transform: scaleX(1);
+                    }
+                       
      .header_nav-list a.main_menu:hover,
      .header_nav-list a.active{
       font-weight: bold;
@@ -789,6 +796,8 @@
         font-weight: bold;
        }
 
+      
+
       .next_head_menu:hover a.sub,
       .extra_sub-menu .sub_2:hover {
         background: #1A712A;
@@ -809,12 +818,11 @@
    .next_head_menu:hover .next_sub_menu::after {
      transform: rotate(225deg);
      }
-    
-   .next_head_menu:hover .extra_sub-menu,
-    .extra_sub-menu:hover+.next_sub_menu::after {
-    transform: rotate(225deg);
-         
-       }
+ 
+            .next_head_menu:hover>.next_sub_menu::after,
+            .next_head_menu:has(.extra_sub-menu:hover)>.next_sub_menu::after {
+              transform: rotate(225deg);
+            }
        .extra_sub-menu {
         transform: none !important;
                  
