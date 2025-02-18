@@ -90,13 +90,13 @@
   body {
       margin: 0;
       line-height: 1.7;
-      font-family: 14px;
+      font-size: 16px;
       color: #3D3D3D;
       font-family: 'Cera Pro', sans-serif;
 
   }
   
-  form {
+    .register_form {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -862,12 +862,12 @@
           position: relative;
         }
         .form_footer{
-    
+          display: flex;
+          flex-direction: column;
           width: 35%;
           padding: 20px 10px;
           align-items: flex-start;
           align-content: center;
-          justify-content: center;
         }
         .info_list{
           padding: 0;
@@ -950,6 +950,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-style: normal;
 }
 .contact{
   display: flex;
@@ -994,8 +995,7 @@
 .links_contacts{
   width: 65%;
   display:flex;
-  margin: 0;
-  padding: 0;
+ 
 }
 .contacts_list{
   margin: 0;
