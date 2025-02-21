@@ -95,7 +95,7 @@
       font-family: 'Cera Pro', sans-serif;
 
   }
-  
+ 
     .register_form {
       display: flex;
       flex-direction: column;
@@ -118,7 +118,6 @@
       border: 1px solid #46A358;
       padding: 10px;
       text-align: center;
-      font-size: 16px;
       border-radius: 5px;
       cursor: pointer;
   }
@@ -517,7 +516,6 @@
     .name{
       color: #3D3D3D;
       font-weight: 400;
-      font-size: 16px;
       line-height: 16px;
       margin: 5px;
 
@@ -776,7 +774,6 @@
       position: absolute;
       background:transparent;
       width: 188px;
-      font-size: 16px;
       line-height: 20px;
       left: 50%;
       top: 30px;
@@ -843,7 +840,6 @@
     .extra_sub-menu{
       position: absolute;
       width: 178px;
-      font-size: 16px;
       line-height: 20px;
       padding: 30px 0 0;
       top: 0;
