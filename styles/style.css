@@ -224,7 +224,7 @@
   .navigation_button{
     min-width: 100px;
     height: 35px;
-    border: 2px solid #46A358;
+    border: 1px solid #46A358;
     background-color: #46A358;
     border-radius: 6px;
     text-align: center;
@@ -235,6 +235,18 @@
   .navigation_button:hover{
     background-color: #30633a;
     transform: scale(1.1);
+    transition: transform 0.3s ease-in-out, background-color 0.5s linear;
+  }
+  .card_plant_1:hover,
+  .offer_1:hover,
+  .post:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out 0.2s;
+  }
+  .card_plant_1:not(:hover),
+  .offer_1:not(:hover),
+  .post:not(:hover){
+    transition: 1s;
   }
   .navigation_button a:visited{
     color: #fff;
@@ -942,6 +954,7 @@
 .submit_btn:hover{
  background-color: #30633a;
  transform: scale(1.1);
+ transition: transform 0.3s ease-in-out, background-color 0.5s linear;
 }
 .foot_container_2{
 
@@ -1051,7 +1064,7 @@ color: #1A712A;
 }
 .social-list a{
     margin: 0;
-    padding: 7px 10px 10px;
+    padding: 2px 4px 4px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -1069,4 +1082,58 @@ color: #1A712A;
 .rights{
   text-align: center;
   font-size: 14px;
+}
+.social-icon{
+  fill: #46A358;
+}
+.social-icon:hover{
+ fill: #30633a;
+ transform: scale(1.1);
+ transition: transform 0.2s ease-in-out;
+
+}
+.login-icon{
+  fill:#FFFFFF;
+  width: 16px;
+}
+.navi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.next-icon{
+  fill:#3D3D3D
+}
+
+ .option_1:hover>.next_page {
+   background-color: #46A358;
+ }
+
+ .option_1:hover>.next_page .next-icon {
+   fill: #FFFFFF;
+ }
+ .arrow_more{
+  width: 15px;
+ }
+.more_info:hover .more {
+  color: #46A358;
+}
+
+.more_info:hover .arrow_more {
+  fill: #46A358;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+.arrow_more_2{
+  width: 13px;
+  fill:#FFFFFF
+}
+ .blogs_button:hover .arrow_more_2{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+.address{
+  fill: #46A358;
+  width: 25px;
 }
