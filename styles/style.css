@@ -102,7 +102,7 @@
       align-items: center;
   }
 
-  input {
+     .register_form input {
       border: 1px solid #eaeaea;
       border-radius: 5px;
       height: 40px;
@@ -240,13 +240,11 @@
    
   }
      .card_plant_1:hover,
-     .offer_1:hover,
      .post:hover{
       transition: transform 0.3s ease-in-out 0.2s;
      }
      
   .card_plant_1:hover,
-  .offer_1:hover,
   .post:hover{
     transform: scale(1.05);
   }
@@ -530,7 +528,7 @@
     }  
     .pages-menu li{
       display: inline-block;
-      padding: 3px 3px 3px;
+      padding: 0;
       text-align: center;
       margin: 0 3px;
       width: 35px;
@@ -540,10 +538,13 @@
     } 
     .pages-menu a{
       text-decoration: none;
+      display: block;
+      padding: 5px 3px 0px;
       color: #3D3D3D;
       font-size: 18px;
       line-height: 16px;
       font-weight: 300;
+      line-height: normal;
     }
     .pages{
        display: flex;
@@ -1064,17 +1065,16 @@ color: #1A712A;
   margin: 0;
   border: 1px solid #727272;
   border-radius: 3px;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
  
  
 }
 .social-list a{
     margin: 0;
-    padding: 2px 4px 4px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    padding: 4px 2px 2px;
+    display: block;
+    line-height: normal;
 }
   
 .social_caption{
@@ -1093,6 +1093,8 @@ color: #1A712A;
 .social-icon{
   fill: #46A358;
   transition: transform 0.2s ease-in-out;
+  width: 100%;
+  
 }
 .social-icon:hover{
  fill: #30633a;
@@ -1150,4 +1152,114 @@ transition: transform 0.3s ease-in-out;
 .address{
   fill: #46A358;
   width: 25px;
+}
+.icons-list li{
+  padding:0;
+}
+.icons-list a{
+  margin:0;
+  background-color:#FFFFFF;
+  display: block;
+  padding:  2px 3px 0px;
+  margin-bottom: 10px;
+  line-height: normal;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+
+}
+.header-menu{
+  position: relative;
+}
+
+.burger{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  left: 6px;
+  top: 6px;
+ 
+}
+.burger span,
+.burger::before,
+.burger::after {
+  content: "";
+  width: 30px;
+  display: block;
+  height: 4px;
+  background-color: #3D3D3D;
+  position: absolute;
+}
+.burger::before{
+  top: 0;
+  left: 0;
+  transition: transform 0.2s linear;
+}
+.burger::after{
+  bottom: 0;
+  top:auto;
+  transition: transform 0.2s linear;
+}
+.burger span{
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -2px);
+  transition: transform 0.2s linear, opacity 0.2s;
+
+}
+
+.check{
+  position: absolute;
+  left: -9999px;
+}
+.main-menu{
+  padding: 40px 0 10px;
+  margin: 0;
+  background-color: #73b4ce;
+  position: absolute;
+  width: 200px;
+  top:0;
+  left: 0;
+  height:100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s linear;
+}
+.nav-list{
+  padding: 0;
+}
+.main-menu li{
+  padding: 0;
+  margin: 0;
+}
+.main-menu li>a{
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 10px ;
+  text-decoration: none;
+  color: #3D3D3D;
+  display: block;
+  transition: background-color 0.3s linear;
+}
+.main-menu a:visited{
+  color: #3D3D3D;
+}
+.main-menu a:hover{
+  color: #FFFFFF;
+  background-color: #2d667d;
+}
+.main-menu a:not(:hover){
+  transition: 0.4s;
+}
+.check:checked+.burger span{
+  opacity: 0;
+  transform: translate(-50%, -2px) scale(0);
+}
+.check:checked +.burger::after{
+  transform: rotate(-45deg) translate(9px, -9px);
+}
+.check:checked + .burger::before{
+  transform: rotate(45deg) translate(10px, 10px);
+}
+.label_checkbox_input:has(.check:checked)+.main-menu{
+  transform: translateX(0);
 }
