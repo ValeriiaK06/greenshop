@@ -422,7 +422,7 @@
     background-color: #FBFBFB;
   }
   .content{
-    width: calc(100% - 350px);
+    width: calc(100% - 310px);
     float: right;
     padding-left: 50px; 
   }
@@ -586,6 +586,7 @@
          }
          .cards{
           display: flex;
+          justify-content: space-between;
           flex-wrap: wrap;
           row-gap: 37px;
           column-gap: 35px;
@@ -1208,6 +1209,7 @@ transition: transform 0.3s ease-in-out;
 
 }
 
+
 .check{
   position: absolute;
   left: -9999px;
@@ -1258,8 +1260,143 @@ transition: transform 0.3s ease-in-out;
   transform: rotate(-45deg) translate(9px, -9px);
 }
 .check:checked + .burger::before{
-  transform: rotate(45deg) translate(10px, 10px);
+  transform: rotate(45deg) translate(9px, 9px);
 }
 .label_checkbox_input:has(.check:checked)+.main-menu{
   transform: translateX(0);
+}
+.buttons{
+  display: flex;
+  gap:5px;
+}
+.navigation_button.burger-menu{
+  display: none;
+}
+.text,
+.image_plant {
+  width: 49%;
+}
+.side-plant{
+  width: 100%;
+}
+.next-icon {
+  width: 100%;
+}
+
+.plant{
+  width: 100%;
+}
+@media(max-width:1024px){
+ .main_caption{
+  font-size: 50px;
+  line-height: 1.2;
+ }
+ .info_caption {
+   font-size: 16px;
+ }
+ .side-bar{
+  width: 270px;
+ }
+ .content {
+   width: (100% - 270px);
+   padding-left: 40px;
+ }
+ .card_plant_1{
+  width: 29%;
+ }
+ .side-menu li{
+  margin-bottom: 10px;
+ }
+ .caption_for_list{
+  margin-bottom: 10px;
+ }
+ .name{
+  font-size: 14px;
+  
+ }
+ .price{
+  font-size: 16px;
+ }
+ .old_price{
+  font-size: 16px;
+ }
+ .pages{
+  margin-top:15px;
+  margin-bottom: 100px;
+ }
+ .pages-menu a{
+  font-size: 14px;
+
+ }
+ .pages-menu li{
+  width: 30px;
+  height: 30px;
+ }
+ 
+}@media(max-width:955px){
+  .card_plant_1{
+    width: 45%;
+    flex-grow: 0;
+  }
+
+}
+@media(max-width:768px){
+  .header_nav{
+    display:none;
+}
+
+
+.main_caption{
+  font-size: 40px;
+  line-height: 1.2;
+}
+.paragraph_1,
+.paragraph_2{
+  font-size: 13px;
+}
+.btn{
+  font-size: 13px;
+}
+.navigation_button{
+  min-width: 100px;
+}
+.header-menu{
+  justify-content: space-between;
+}
+.navigation_button.burger-menu{
+  display: block;
+}
+.navigation_button.log{
+  background: none;
+  border: none;
+  min-width: auto;
+}
+.log .btn{
+ display: none;
+}
+
+.login-icon{
+  fill: #30633a;
+  width: 25px;
+}
+.image_plant,
+.text{
+  width: 100%;
+}
+.image_plant{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .visual{
+  display: flex;
+  flex-direction: column;
+ }
+.plant{
+  max-width: 350px;
+}
+.visual{
+  margin-top: 10px;
+  padding-top: 20px;
+}
 }
