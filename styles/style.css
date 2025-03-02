@@ -1209,6 +1209,15 @@ transition: transform 0.3s ease-in-out;
   transition: transform 0.2s linear, opacity 0.2s;
 
 }
+.sale{
+  display: none;
+  padding: 20px 0 20px 51px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #30633a;
+}
+
 
 
 .check{
@@ -1530,10 +1539,20 @@ transition: transform 0.3s ease-in-out;
   .foot_container.cnt_3{
      flex-direction: column;
   }
+    .categories {
+      display: block;
+      font-size: 14px;
+      padding-left: 51px;
+    }
   .info_list{
     flex-direction: column;
     
   }
+  .sale{
+    display: block;
+  
+  }
+   
   .info_list li{
     width: 100%;
   }
@@ -1607,11 +1626,7 @@ transition: transform 0.3s ease-in-out;
     .sort{
       font-size: 14px;
     }
-    .categories{
-      display: block;
-      font-size: 14px;
-      padding-left: 52px;
-    }
+    
     .description{
       font-size: 9px;
 
