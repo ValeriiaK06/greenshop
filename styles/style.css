@@ -612,7 +612,7 @@
          .african_violet,
         .blushing_bromeliad{
           width: 100%;
-          margin-top: -100px;
+          margin-top: -120px;
         }
         .info{
           display: flex;
@@ -635,7 +635,7 @@
           line-height: 24px;
           color: #727272;
           margin: 0;
-          margin-left: -46px;
+          
         }
         .blogs_button{
             display: flex;
@@ -1292,6 +1292,16 @@ transition: transform 0.3s ease-in-out;
 .next-icon {
   width: 100%;
 }
+.info{
+  width: 45%;
+}
+.post-plant{
+  width: 50%;
+}
+.african_violet,
+.blushing_bromeliad{
+  width: 100%;
+}
 
 .plant{
   width: 100%;
@@ -1322,7 +1332,7 @@ transition: transform 0.3s ease-in-out;
    padding-left: 40px;
  }
  .submit_btn{
-  max-width: 45px;
+  width: 45px;
   font-size: 14px;
  }
  
@@ -1367,7 +1377,7 @@ transition: transform 0.3s ease-in-out;
     font-size: 12px;
   }
     .submit_btn {
-      max-width: 40px;
+      width: 40px;
       font-size: 12px;
     }
     .form_footer{
@@ -1416,7 +1426,7 @@ transition: transform 0.3s ease-in-out;
       font-size: 12px;
     }
   .navigation_button.blogs_button{
-    max-width: 70px;
+    width: 60px;
     font-size: 12px;
   }
     .cards{
@@ -1431,7 +1441,7 @@ transition: transform 0.3s ease-in-out;
     }
    
     .shop_button{
-      max-width: 70px;
+      width: 70px;
     }
     .main_caption{
       font-size: 40px;
@@ -1518,7 +1528,7 @@ transition: transform 0.3s ease-in-out;
   font-size: 13px;
 }
 .navigation_button{
-  max-width: 100px;
+  width: 65px;
 }
 .header-menu{
   justify-content: space-between;
@@ -1631,7 +1641,7 @@ transition: transform 0.3s ease-in-out;
       font-size: 13px;
     }
     .navigation_button.blogs_button{
-      max-width: 50px;
+      width: 50px;
       font-size: 11px;
     }
         .links_contacts {
