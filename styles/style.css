@@ -1409,6 +1409,16 @@ transition: transform 0.3s ease-in-out;
       width: 40%;
     
     }
+    .info_caption{
+      font-size: 15px;
+    }
+    .description{
+      font-size: 12px;
+    }
+  .navigation_button.blogs_button{
+    max-width: 70px;
+    font-size: 12px;
+  }
     .cards{
       padding-left: 35px;
     }
@@ -1508,7 +1518,7 @@ transition: transform 0.3s ease-in-out;
   font-size: 13px;
 }
 .navigation_button{
-  min-width: 100px;
+  max-width: 100px;
 }
 .header-menu{
   justify-content: space-between;
@@ -1620,8 +1630,8 @@ transition: transform 0.3s ease-in-out;
     .info__from_footer{
       font-size: 13px;
     }
-    .navigation_button .blogs_button{
-      min-width: 50px;
+    .navigation_button.blogs_button{
+      max-width: 50px;
       font-size: 11px;
     }
         .links_contacts {
@@ -1663,11 +1673,11 @@ transition: transform 0.3s ease-in-out;
     }
     
     .description{
-      font-size: 9px;
+      font-size: 8px;
 
     }
     .info_caption{
-      font-size: 14px;
+      font-size: 12px;
     }
     .offer_1{
       width: 100%;
