@@ -1419,6 +1419,13 @@ transition: transform 0.3s ease-in-out;
     .offer_1{
       width: 40%;
     }
+    .visual{
+      margin-top: 20px;
+      
+    }
+    .shop_button{
+      max-width: 70px;
+    }
 }
 
 @media(max-width:768px){
