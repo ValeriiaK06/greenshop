@@ -1348,6 +1348,7 @@ transition: transform 0.3s ease-in-out;
  }
  .pages-menu a{
   font-size: 14px;
+  padding: 3px 2px 2px;
 
  }
  .pages-menu li{
@@ -1538,6 +1539,18 @@ transition: transform 0.3s ease-in-out;
   .foot_container_2,
   .foot_container.cnt_3{
      flex-direction: column;
+  }
+  .blog_container{
+    flex-direction: column;
+  }
+  .post{
+    width: 100%;
+  }
+  .caption_to_post{
+    font-size: 17px;
+  }
+  .date{
+    font-size: 14px;
   }
     .categories {
       display: block;
