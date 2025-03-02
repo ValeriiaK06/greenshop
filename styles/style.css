@@ -1580,6 +1580,12 @@ transition: transform 0.3s ease-in-out;
     display: block;
   
   }
+  .info_caption{
+    font-size: 14px;
+  }
+  .description{
+    font-size: 11px;
+  }
    
   .info_list li{
     width: 100%;
