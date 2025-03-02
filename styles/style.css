@@ -1621,7 +1621,8 @@ transition: transform 0.3s ease-in-out;
       font-size: 13px;
     }
     .navigation_button .blogs_button{
-      min-width: 70px;
+      min-width: 50px;
+      font-size: 11px;
     }
         .links_contacts {
           width: 100%;
