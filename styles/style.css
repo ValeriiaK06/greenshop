@@ -1416,6 +1416,9 @@ transition: transform 0.3s ease-in-out;
       float: none;
       padding-left: 35px;
     }
+    .offer_1{
+      width: 40%;
+    }
 }
 
 @media(max-width:768px){
@@ -1464,14 +1467,12 @@ transition: transform 0.3s ease-in-out;
   align-items: center;
  }
  .offer_1{
-  width: 80%;
+  width: 100%;
  }
  .offer_1:nth-child(1){
-  margin-bottom: 0 20px 120px;
+  margin-bottom:120px;
  }
- .offer_1:nth-child(2) {
-   margin-bottom: 0 20px 10px;
- }
+ 
  .caption_posts{
   font-size: 20px;
  }
