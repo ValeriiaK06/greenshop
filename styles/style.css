@@ -1467,7 +1467,7 @@ transition: transform 0.3s ease-in-out;
   width: 80%;
  }
  .offer_1:nth-child(1){
-  margin-bottom: 0 20px 80px;
+  margin-bottom: 0 20px 120px;
  }
  .offer_1:nth-child(2) {
    margin-bottom: 0 20px 10px;
