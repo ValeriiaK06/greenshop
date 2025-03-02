@@ -1419,12 +1419,16 @@ transition: transform 0.3s ease-in-out;
     .offer_1{
       width: 40%;
     }
-    .visual{
-      margin-top: 20px;
-      
-    }
+   
     .shop_button{
       max-width: 70px;
+    }
+    .main_caption{
+      font-size: 40px;
+    }
+    .paragraph_1,
+    .paragraph_2{
+      font-size: 13px;
     }
 }
 
