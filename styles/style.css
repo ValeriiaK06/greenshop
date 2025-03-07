@@ -1662,11 +1662,10 @@ transition: transform 0.3s ease-in-out;
   
     }
    
-    .extra {
-      margin-bottom: 30px;
-    }
+   
         .post {
           width: 80%;
+          margin-bottom: 30px;
         }
                 
                  .card_plant_1{
